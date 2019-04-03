@@ -60,7 +60,7 @@ yargs.command({
             type: 'string'
         }
     },
-    handler: () => notes.readNote(argv.title)
+    handler: (argv) => notes.readNote(argv.title)
 })
 
 yargs.parse();
